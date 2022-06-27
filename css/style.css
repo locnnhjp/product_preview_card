@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    display: flex;
+    width: 480px;
+    margin: 100px auto;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.product-image {
+    width: 50%;
+    background-image: url("../images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.content {
+    width: 50%;
+    padding: 30px;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Fraunces', serif;
+    color: black;
+}
+
+.product-desc {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+}
+
+.current-price {
+    font-size: 24px;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+
+.prev-price {
+    font-size: 10px;
+    margin: auto;
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.add-btn {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: hsl(157, 69%, 15%);
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        width: 300px;
+    }
+    .content {
+        width: 100%;
+    }
+    .product-image {
+        width: 100%;
+        background-image: url("../images/image-product-mobile.jpg");
+        background-size: contain;
+        height: 210px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 5px;
+    }
+}
